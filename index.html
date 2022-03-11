@@ -99,6 +99,7 @@
                             JavaScript has its own engine called v8.
                                 
                             Since JavaScript is a single threated programming language, which means it has a single Call Stack.
+                            <strong>Overview: javascript file => parser => AST => Conversion to machine code => Converted machine code => code Run</strong>
                         </div>
                       </div>
                     </div>
@@ -112,6 +113,7 @@
                         <div class="accordion-body">
                             <strong>Answer: </strong>The event loop is a constantly running process that monitors both the callback queue and the call stack. If the call stack is not empty, the event loop waits until it is empty and places the next function from the callback queue to the call stack.
                             In general, since JavaScript is a single threated programming language, Therefore, the method used to manage its asynchronous code is called event loop.
+                            For example we can say set time out. It doesn't stop there when we run. The rest of the code runs through the event loop
                         </div>
                       </div>
                     </div>
@@ -127,6 +129,7 @@
     
                           Local Storage is in-browser storage that has allocated space for each domain. Session Storage : This maintains a separate storage area for each given origin that's available for the duration of the page session.
                           local storage data is expired but session storage data doesn't expire. that is main diffrence between LocalStorage and SessionStorage.
+                          LocalStorage accessibility is all windows but SessionStorage accessibility is private to tab. LocalStorage expration is never expires but SessionStorage expration is on tab close.
                           when we close browser or open new tab LocalStorage data doesn't expired but when we close browser SessionStorage data has been clear.
                           this is the major diffrence in LocalStorage and SessionStorage.
                         </div>
