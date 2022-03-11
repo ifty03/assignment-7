@@ -81,51 +81,60 @@
         <!-- Question & answer (Assignment bonus part) -->
         <section class="container mb-5 mt-4">
             <h3 class="text-center mb-3">Question & Answer</h3>
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                      Question 1: How does javascript work?
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                    <div class="accordion-body">
-                        <strong>Answer:</strong> javascript is a dynamic type scripting programing language. it is designed to control the behavior of the website. But now almost everything can be done with it. Whenever we run a JavaScript program inside a web browser, JavaScript code is received by the browser's engine and the engine runs the source code to obtain the output.
-                        JavaScript has its own engine called v8.
-                            
-                        Since JavaScript is a single threated programming language, which means it has a single Call Stack.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        Question 2: What does javascript event loop?
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                    <div class="accordion-body">
-                        <strong>Answer: </strong>The event loop is a constantly running process that monitors both the callback queue and the call stack. If the call stack is not empty, the event loop waits until it is empty and places the next function from the callback queue to the call stack.
-                        In general, since JavaScript is a single threated programming language, Therefore, the method used to manage its asynchronous code is called event loop.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        Question 3: LocalStorage & SessionStorage diffrence?
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body">
-                      <strong>Answer:</strong> while data is local storage doesn't expire. but when data is session storage is cleared when the page session end.
+            <div class="d-flex">
 
-                      Local Storage is in-browser storage that has allocated space for each domain. Session Storage : This maintains a separate storage area for each given origin that's available for the duration of the page session.
-                      local storage data is expired but session storage data doesn't expire. that is main diffrence between LocalStorage and SessionStorage.
+                <div class="w-50 pe-5">
+                    <img class="rounded" src="qimage.png" alt="">
+                </div>
+                <div class="accordion w-50 ps-3" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          Question 1: How does javascript work?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <strong>Answer:</strong> javascript is a dynamic type scripting programing language. it is designed to control the behavior of the website. But now almost everything can be done with it. Whenever we run a JavaScript program inside a web browser, JavaScript code is received by the browser's engine and the engine runs the source code to obtain the output.
+                            JavaScript has its own engine called v8.
+                                
+                            Since JavaScript is a single threated programming language, which means it has a single Call Stack.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Question 2: What does javascript event loop?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <strong>Answer: </strong>The event loop is a constantly running process that monitors both the callback queue and the call stack. If the call stack is not empty, the event loop waits until it is empty and places the next function from the callback queue to the call stack.
+                            In general, since JavaScript is a single threated programming language, Therefore, the method used to manage its asynchronous code is called event loop.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Question 3: LocalStorage & SessionStorage diffrence?
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                          <strong>Answer:</strong> while data is local storage doesn't expire. but when data is session storage is cleared when the page session end.
+    
+                          Local Storage is in-browser storage that has allocated space for each domain. Session Storage : This maintains a separate storage area for each given origin that's available for the duration of the page session.
+                          local storage data is expired but session storage data doesn't expire. that is main diffrence between LocalStorage and SessionStorage.
+                          when we close browser or open new tab LocalStorage data doesn't expired but when we close browser SessionStorage data has been clear.
+                          this is the major diffrence in LocalStorage and SessionStorage.
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
+
+            </div>
         </section>
 
         <footer></footer>
